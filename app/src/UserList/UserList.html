@@ -2,6 +2,7 @@
     <div class="col-md-8">
 
         <div class="list-group">
+            <p class="loader" ng-if="usersLoading">Loading...</p>
             <a href="#!/users/{{singleUser.id }}" class="list-group-item" ng-repeat="singleUser in users">
 
                 <h4>
@@ -19,6 +20,7 @@
     <div class="col-md-4">
 
         <div class="list-group">
+            <p class="loader" ng-if="postsLoading">Loading...</p>
             <div class="list-group-item" ng-repeat="singlePost in posts">
 
                 <p>
