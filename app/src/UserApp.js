@@ -13,6 +13,10 @@ angular.module('UserApp')
           templateUrl: 'src/UserDetail/UserDetail.html',
           controller: 'UserDetailCtrl'
         })
+        .when('/edit/:userId', {
+          templateUrl: 'src/EditUser/EditUser.html',
+          controller: 'EditUserCtrl'
+        })
         .when('/create', {
           templateUrl: 'src/CreateUser/CreateUser.html',
           controller: 'CreateUserCtrl'

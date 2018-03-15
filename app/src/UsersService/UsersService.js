@@ -19,6 +19,14 @@ angular
                     data: userData
                 });
             },
+            updateUser: function(userId, userData) {
+                console.log("Update", userId, userData);
+                return $http({
+                    method: 'PUT',
+                    url: 'https://jsonplaceholder.typicode.com/users/' + userId,
+                    data: userData
+                });
+            },
 
             deleteUser: function(userId) {
                 return $http({
